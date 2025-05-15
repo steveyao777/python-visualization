@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e4eb800fc87ebe2bd647d99db8071d36 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e4eb800fc87ebe2bd647d99db8071d36" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e4eb800fc87ebe2bd647d99db8071d36 = L.map(
+                "map_e4eb800fc87ebe2bd647d99db8071d36",
+                {
+                    center: [39.9042, 116.4074],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_e4eb800fc87ebe2bd647d99db8071d36);
+
+            
+
+        
+    
+            var tile_layer_92979266be48a467df5ddf69cc983124 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca target=\"_blank\" href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e4eb800fc87ebe2bd647d99db8071d36);
+        
+    
+            var marker_23eb810decdd1afee88cec22b7467608 = L.marker(
+                [39.9042, 116.4074],
+                {}
+            ).addTo(map_e4eb800fc87ebe2bd647d99db8071d36);
+        
+    
+            var icon_594bbc9b0d58052c4c695041e5e7b19a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_23eb810decdd1afee88cec22b7467608.setIcon(icon_594bbc9b0d58052c4c695041e5e7b19a);
+        
+    
+        var popup_1ebde0e9973788c59c0117c346f25283 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8c54dec9dfed2c00b0a92d1aa7b5696 = $(`<div id="html_b8c54dec9dfed2c00b0a92d1aa7b5696" style="width: 100.0%; height: 100.0%;"><b>天安门广场</b></div>`)[0];
+                popup_1ebde0e9973788c59c0117c346f25283.setContent(html_b8c54dec9dfed2c00b0a92d1aa7b5696);
+            
+        
+
+        marker_23eb810decdd1afee88cec22b7467608.bindPopup(popup_1ebde0e9973788c59c0117c346f25283)
+        ;
+
+        
+    
+    
+            var circle_marker_2ee2c23483e837ccb531b191b9947b57 = L.circleMarker(
+                [39.9163, 116.3903],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_e4eb800fc87ebe2bd647d99db8071d36);
+        
+    
+        var popup_595cff1c2c8d13802f70fe57f39e976d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9cce0fafd3c172e6f9050af16a25711a = $(`<div id="html_9cce0fafd3c172e6f9050af16a25711a" style="width: 100.0%; height: 100.0%;">故宫博物院</div>`)[0];
+                popup_595cff1c2c8d13802f70fe57f39e976d.setContent(html_9cce0fafd3c172e6f9050af16a25711a);
+            
+        
+
+        circle_marker_2ee2c23483e837ccb531b191b9947b57.bindPopup(popup_595cff1c2c8d13802f70fe57f39e976d)
+        ;
+
+        
+    
+    
+            var heat_map_81104aefda55eb77e274ff47927c66aa = L.heatLayer(
+                [[39.95387141530112, 116.39357356988288], [39.968968853810075, 116.5597029856408], [39.88078466252767, 116.38398630430508], [40.062121281550745, 116.48414347291529], [39.857252561406504, 116.46165600435859], [39.857858230718755, 116.36082702464297], [39.928396227156604, 116.21607197553422], [39.7317082167487, 116.3511712470759], [39.80291688796656, 116.43882473325952], [39.813397592447885, 116.26616962986647], [40.05076487689216, 116.38482236995134], [39.91095282046879, 116.26492518137864], [39.84976172754749, 116.41849225897099], [39.78910064225777, 116.44496980183456], [39.84413613100812, 116.37823062502066], [39.84402933877706, 116.5926278184509], [39.90285027752621, 116.3016289071044], [39.986454491210324, 116.28531563500289], [39.925086359500476, 116.21143298761201], [39.77138139511016, 116.4270861235869], [39.97804665799954, 116.42453682811899], [39.89263517176118, 116.37728963044107], [39.75634780096326, 116.33541557916053], [39.85813612290402, 116.51311222262188], [39.93856182895685, 116.23109598446372], [39.936608396939484, 116.36889177195836], [39.836507799969404, 116.46856762888409], [40.007299952249596, 116.50052801191161], [39.82027824767774, 116.37647876241488], [39.93732634314036, 116.50495451271223], [39.85628257621548, 116.38883410233362], [39.7935665025994, 116.28777933759193], [39.985452582239425, 116.54302400285708], [39.89699898784197, 116.50775328978919], [39.94036360250477, 116.34288802453948], [39.940339560550846, 116.5612036566466], [39.90061739608901, 116.5638643655814], [39.64222548959103, 116.48959025043752], [39.912904706823824, 116.37749926495341], [39.91337607765355, 116.2086431085399], [39.882232811216255, 116.44311125715117], [40.051989404474156, 116.35557297817263], [39.82335063971068, 116.35722429564154], [39.99574021177021, 116.44027511096597], [39.8512239796233, 116.45872674331133], [39.913907754934804, 116.50426449905328], [39.833994690612265, 116.37463378534022], [39.864989184686785, 116.26104850518678], [39.93381202770646, 116.43350552721799], [39.904711345664246, 116.38394128666248], [39.76266292579496, 116.36533546772345], [39.869928548347325, 116.32717227307784], [39.8880714288334, 116.44780508568145], [40.092818590121055, 116.42485778128318], [39.92995503907228, 116.39995540842338], [39.7123228784701, 116.40474861245508], [39.9102230209941, 116.65372421124853], [39.88496390352189, 116.43755473423336], [39.90072882302948, 116.29053219623805], [40.018482281451504, 116.48259330326867], [39.983303194704305, 116.31646125452052], [40.04447943109361, 116.26721489372076], [39.96288570938003, 116.626445562581], [39.805146367486934, 116.35077022703972], [39.914165136508764, 116.35705243458838], [39.74913365689339, 116.41425629748059], [39.79796962862739, 116.45475924306352], [39.81225757657662, 116.56239344050175], [39.82587467076638, 116.37519384837942], [39.98555172173697, 116.2843135683566], [39.926945993460414, 116.53811427542824], [39.74345167654388, 116.42586338585322], [39.93018827942485, 116.48558228717772], [39.780504928912194, 116.27535433869157], [39.95639415656169, 116.43709846732331], [39.929249285034594, 116.44204482094969], [39.83619752784215, 116.4306253697161], [39.93350724732987, 116.33596485819736], [40.09077745111448, 116.45478329209118], [39.78506965027974, 116.47305536086338], [39.80673183297727, 116.48610846037424], [40.020059557900744, 116.32533176816483], [40.00053761292443, 116.44867809269364], [39.98640601599945, 116.59707929826538], [39.879661188399716, 116.33202638356424], [39.81524855703745, 116.32581897150345], [39.896489829058595, 116.44151519748166], [39.931869079933, 116.49011832490359], [39.90550018918779, 116.55275340771573], [39.87773431667621, 116.67941691665895], [39.966766734776506, 116.32168424435837], [39.797110750193895, 116.45564724152432], [39.881853721467415, 116.4788000494092], [39.951523762457356, 116.4001171087343], [39.81952062819316, 116.25591527753141], [39.8595485047933, 116.49303987943235], [39.92560937441302, 116.2828261221288], [39.921518092585124, 116.44593173797288], [39.81581425637989, 116.42277251059456], [39.9100208718446, 116.29310297021694]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 15}
+            ).addTo(map_e4eb800fc87ebe2bd647d99db8071d36);
+        
+    
+            var circle_f4bb200cbafee22890a13dcd61bcbab4 = L.circle(
+                [31.2304, 121.4737],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24240, "stroke": true, "weight": 3}
+            ).addTo(map_e4eb800fc87ebe2bd647d99db8071d36);
+        
+    
+        var popup_0ee7825bc36acfa1a8c318980d361d69 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc79e4cd27c7c4ad56c5a4bc31ee182f = $(`<div id="html_dc79e4cd27c7c4ad56c5a4bc31ee182f" style="width: 100.0%; height: 100.0%;">上海人口：2424万</div>`)[0];
+                popup_0ee7825bc36acfa1a8c318980d361d69.setContent(html_dc79e4cd27c7c4ad56c5a4bc31ee182f);
+            
+        
+
+        circle_f4bb200cbafee22890a13dcd61bcbab4.bindPopup(popup_0ee7825bc36acfa1a8c318980d361d69)
+        ;
+
+        
+    
+    
+            var circle_bf406b1aabbdd11d98223dc926ae726a = L.circle(
+                [23.1291, 113.2644],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15300, "stroke": true, "weight": 3}
+            ).addTo(map_e4eb800fc87ebe2bd647d99db8071d36);
+        
+    
+        var popup_4ce0edd3cb46d83e418613960ac5cd8c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0c259ab5623c6ca65c076385be654b4 = $(`<div id="html_c0c259ab5623c6ca65c076385be654b4" style="width: 100.0%; height: 100.0%;">广州人口：1530万</div>`)[0];
+                popup_4ce0edd3cb46d83e418613960ac5cd8c.setContent(html_c0c259ab5623c6ca65c076385be654b4);
+            
+        
+
+        circle_bf406b1aabbdd11d98223dc926ae726a.bindPopup(popup_4ce0edd3cb46d83e418613960ac5cd8c)
+        ;
+
+        
+    
+    
+            var circle_0866edcdacd84c104b17b706fb91c235 = L.circle(
+                [29.563, 106.5516],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 32050, "stroke": true, "weight": 3}
+            ).addTo(map_e4eb800fc87ebe2bd647d99db8071d36);
+        
+    
+        var popup_3a504dcd83669aacba49fec3e06cb3bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb0106d590a86d3ef6b7fe9afd5101fb = $(`<div id="html_eb0106d590a86d3ef6b7fe9afd5101fb" style="width: 100.0%; height: 100.0%;">重庆人口：3205万</div>`)[0];
+                popup_3a504dcd83669aacba49fec3e06cb3bb.setContent(html_eb0106d590a86d3ef6b7fe9afd5101fb);
+            
+        
+
+        circle_0866edcdacd84c104b17b706fb91c235.bindPopup(popup_3a504dcd83669aacba49fec3e06cb3bb)
+        ;
+
+        
+    
+</script>
+</html>
